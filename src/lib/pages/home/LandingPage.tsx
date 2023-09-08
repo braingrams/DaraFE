@@ -22,7 +22,7 @@ import { CustomAccordion } from '~/lib/components/Utils/CustomAccordion';
 import { CustomBtn } from '~/lib/components/Utils/CustomBtn';
 import FaqData from '~/lib/components/data/faqData.json';
 
-const Home = () => {
+const LandingPage = () => {
   return (
     <Box>
       <CustomContainer>
@@ -210,4 +210,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default LandingPage;
