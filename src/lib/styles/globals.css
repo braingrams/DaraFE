@@ -1,1 +1,13 @@
-/* Global Styling here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #dce1e7;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6B7280;
+    border-radius: 15px;
+}

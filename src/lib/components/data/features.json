@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Social Content Page",
+        "content": "Immerse yourself in the world of our service providers through our intuitive social content page. Engage with them by liking their content and exploring their posts, creating a sense of community and familiarity."
+    },
+    {
+        "id": 2,
+        "title": "Localized Visibility",
+        "content": "Discover the power of Dara's 'Service Provider Near Me' feature. Easily locate a service provider in your vicinity, saving you time and effort while ensuring prompt assistance."
+    },
+    {
+        "id": 3,
+        "title": "Direct Communication",
+        "content": "Seamlessly connect with service providers through our integrated call and chat features. Have your queries answered and instructions clarified without any intermediaries."
+    },
+    {
+        "id": 4,
+        "title": "Transparent Payments",
+        "content": "We believe in accountability. With Dara, you can pay service providers directly into their wallet, enhancing transparency and ensuring that your financial transactions are secure and traceable."
+    },
+    {
+        "id": 5,
+        "title": "Efficient Project Management",
+        "content": "Keep track of your tasks with our project management features. Monitor the status of ongoing projects and receive notifications when tasks are completed, ensuring a smooth and organized experience."
+    }
+]
