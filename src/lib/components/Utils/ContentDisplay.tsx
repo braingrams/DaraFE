@@ -22,7 +22,7 @@ export const ContentDisplay = ({
         <Image src={img} alt={img} w="full" />
       </Box>
       <VStack w="full" gap="1.5rem" align="flex-start" order={rtl ? 0 : 1}>
-        <MainHeader text={text} align={'left'} />
+        <MainHeader text={text} align={'left'} w="90%" />
         <MainSubTitle text={sub} align="left" />
         {btn && (
           <CustomBtn text={btn} onClick={onClick} icon={LiaAngleRightSolid} />

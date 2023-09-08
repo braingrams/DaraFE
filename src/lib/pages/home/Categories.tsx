@@ -19,6 +19,7 @@ import { BsSearch } from 'react-icons/bs';
 import { CategoryBox } from '~/lib/components/Utils/CategoryBox';
 import { CustomBtn } from '~/lib/components/Utils/CustomBtn';
 import { CustomContainer } from '~/lib/components/Utils/CustomContainer';
+import CustomRating from '~/lib/components/Utils/CustomRating';
 import { FilterHeadings } from '~/lib/components/Utils/Filters/FilterHeadings';
 import { MainHeader } from '~/lib/components/Utils/MainHeader';
 import { TextWithDot } from '~/lib/components/Utils/TextWithDot';
@@ -123,8 +124,45 @@ export const Categories = () => {
                       h="14rem"
                       overflow="auto"
                     >
+                      <Radio value="1">
+                        <HStack>
+                          <CustomRating value={4.5} />
+                          <Text fontSize=".875rem" fontWeight={500}>
+                            4.5 & above
+                          </Text>
+                        </HStack>
+                      </Radio>
                       <Radio value="1" fontSize=".875rem">
-                        4.5 & above
+                        <HStack>
+                          <CustomRating value={4.0} />
+                          <Text fontSize=".875rem" fontWeight={500}>
+                            4.0 & above
+                          </Text>
+                        </HStack>
+                      </Radio>
+                      <Radio value="1" fontSize=".875rem">
+                        <HStack>
+                          <CustomRating value={3.5} />
+                          <Text fontSize=".875rem" fontWeight={500}>
+                            3.5 & above
+                          </Text>
+                        </HStack>
+                      </Radio>
+                      <Radio value="1" fontSize=".875rem">
+                        <HStack>
+                          <CustomRating value={3.0} />
+                          <Text fontSize=".875rem" fontWeight={500}>
+                            3.0 & above
+                          </Text>
+                        </HStack>
+                      </Radio>
+                      <Radio value="1" fontSize=".875rem">
+                        <HStack>
+                          <CustomRating value={2.5} />
+                          <Text fontSize=".875rem" fontWeight={500}>
+                            2.5 & above
+                          </Text>
+                        </HStack>
                       </Radio>
                     </VStack>
                   )}

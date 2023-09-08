@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 
 import Providers from '~/app/providers';
 import Layout from '~/lib/layout';
 import '~/lib/styles/globals.css';
+import Loading from './loading';
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -46,9 +48,11 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
       <body>
-        <Providers>
-          <Layout>{children}</Layout>
-        </Providers>
+        <Suspense fallback={<Loading />}>
+          <Providers>
+            <Layout>{children}</Layout>
+          </Providers>
+        </Suspense>
       </body>
     </html>
   );

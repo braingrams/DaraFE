@@ -184,8 +184,10 @@ const Home = () => {
           />
         </Box>
 
-        <Box w="90%" mx="auto">
-          <MainHeader text="Frequently asked questions about Dara" w="90%" />
+        <Box w="90%" mx="auto" mt="9.5rem">
+          <Box mx="auto" w="40%">
+            <MainHeader text="Frequently asked questions about Dara" />
+          </Box>
           <VStack mt="3.5rem">
             <Accordion
               defaultIndex={[1]}

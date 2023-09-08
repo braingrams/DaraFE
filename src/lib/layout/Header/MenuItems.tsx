@@ -1,9 +1,10 @@
 'use client';
 
-import { Box, Link } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import React from 'react';
 import { IMenuProps } from '~/lib/components/Schemas';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export const MenuItems = ({ link }: IMenuProps) => {
   const url = `/${link.href}`;
@@ -11,13 +12,7 @@ export const MenuItems = ({ link }: IMenuProps) => {
   const isActive = pathname === url;
 
   return (
-    <Link
-      href={url}
-      _hover={{
-        textDecor: 'none',
-        color: 'brand.100',
-      }}
-    >
+    <Link href={url} passHref>
       <Box
         cursor="pointer"
         fontFamily="Inter"
