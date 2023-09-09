@@ -6,23 +6,31 @@ import { ICustomSteps } from '../Schemas';
 
 export const CustomSteps = ({ rtl, bg, title, sub, num, h }: ICustomSteps) => {
   return (
-    <HStack gap="2.5rem" ml={rtl ? '0rem' : '9.5rem'}>
+    <HStack
+      gap={['.5rem', '2.5rem']}
+      ml={['0', rtl ? '0rem' : '9.5rem']}
+      flexDir={[rtl ? 'column-reverse' : 'column', 'row']}
+    >
       <VStack
         order={rtl ? 1 : 0}
         w="full"
-        align={rtl ? 'flex-start' : 'flex-end'}
+        align={['center', rtl ? 'flex-start' : 'flex-end']}
       >
-        <VStack gap="1.25rem">
+        <VStack gap={['.5rem', '1.25rem']}>
           <Circle
             bg={bg}
-            size="2.25rem"
-            fontSize="1.5rem"
+            size={['1.5rem', '2.25rem']}
+            fontSize={['.87rem', '1.5rem']}
             fontWeight={500}
             color="white"
           >
             {num}
           </Circle>
-          <Box h={h} borderLeft="1px dashed #6B7280" />
+          <Box
+            h={h}
+            borderLeft="1px dashed #6B7280"
+            display={['none', 'block']}
+          />
         </VStack>
       </VStack>
       <VStack
@@ -32,12 +40,18 @@ export const CustomSteps = ({ rtl, bg, title, sub, num, h }: ICustomSteps) => {
         w="full"
       >
         <MainHeader
-          size="1.5rem"
+          size={['.875rem', '1.5rem']}
           fw="600"
-          align={rtl ? 'right' : 'left'}
+          align={['center', rtl ? 'right' : 'left']}
           text={title}
         />
-        <MainSubTitle text={sub} align={rtl ? 'right' : 'left'} />
+        <MainSubTitle text={sub} align={['center', rtl ? 'right' : 'left']} />
+        <Box
+          h={h}
+          borderLeft="1px dashed #6B7280"
+          display={['block', 'none']}
+          mx="auto"
+        />
       </VStack>
     </HStack>
   );

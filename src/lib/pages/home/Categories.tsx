@@ -13,6 +13,7 @@ import {
   Select,
   Grid,
   Radio,
+  Button,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
@@ -31,29 +32,33 @@ export const Categories = () => {
   return (
     <Box>
       <CustomContainer>
-        <VStack gap="1.5rem" py="7.5rem" borderBottom="1px solid #D1D5DB">
+        <VStack
+          gap={['1rem', '1.5rem']}
+          py={['3rem', '7.5rem']}
+          borderBottom="1px solid #D1D5DB"
+        >
           <TextWithDot text="Categories" />
           <MainHeader
             fw={600}
-            w="80%"
+            w={['full', '80%']}
             text="Connect with well-trained, verified artisans and skilled professionals"
           />
-          <InputGroup w="50%">
+          <InputGroup w={['80%', '50%']}>
             <InputLeftElement top="20%">
               <Icon as={BsSearch} />
             </InputLeftElement>
             <Input
               border="1px solid #E5E7EB"
-              borderRadius="35px"
+              borderRadius={['10px', '35px']}
               placeholder="Search"
-              h="4rem"
+              h={['3rem', '4rem']}
               w="full"
             />
           </InputGroup>
         </VStack>
-        <Box my="4.75rem">
-          <Flex gap="1.5rem">
-            <Box w="20%">
+        <Box my={['3rem', '4.75rem']}>
+          <Flex gap="1.5rem" flexDir={['column', 'row']}>
+            <Box w={['full', '20%']} display={['none', 'block']}>
               <HStack gap="1.5rem" mb="1.5rem">
                 <Text fontSize="1.25rem" fontWeight={500}>
                   Filter
@@ -208,15 +213,38 @@ export const Categories = () => {
                 </Box>
               </VStack>
             </Box>
-            <Box w="80%">
-              <HStack gap="1.5rem" justify="flex-end" w="full" mb="1.5rem">
-                <Text fontSize="1rem" fontWeight={500} color="#6B7280">
+            <Box w={['full', '80%']}>
+              <HStack
+                gap="1.5rem"
+                justify={['space-between', 'flex-end']}
+                w="full"
+                mb="1.5rem"
+              >
+                <Button
+                  color="brand.100"
+                  borderRadius="35px"
+                  border="2px solid"
+                  borderColor="brand.100"
+                  bgColor="transparent"
+                  px="2rem"
+                  w={['fit-content', 'full']}
+                  fontSize={['.75rem', '1rem']}
+                  display={['flex', 'none']}
+                >
+                  Filter
+                </Button>
+                <Text
+                  fontSize="1rem"
+                  fontWeight={500}
+                  color="#6B7280"
+                  display={['none', 'block']}
+                >
                   Sort by:
                 </Text>
                 <Select
                   border="1px solid #e5e7eb"
                   borderRadius="1.5rem"
-                  w="20%"
+                  w={['50%', '20%']}
                 >
                   <option>Most popular</option>
                 </Select>

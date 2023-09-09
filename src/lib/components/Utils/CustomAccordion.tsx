@@ -35,12 +35,12 @@ export const CustomAccordion = ({ title, content }: IAccordion) => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                fontSize={['1rem', '1.25rem']}
-                lineHeight="1.75rem"
+                fontSize={['.875remrem', '1.25rem']}
+                lineHeight={['1.25rem', '1.75rem']}
                 color="#073367"
                 noOfLines={1}
                 fontWeight="500"
-                maxW="65%"
+                maxW="100%"
               >
                 {title}
               </Box>
@@ -54,8 +54,8 @@ export const CustomAccordion = ({ title, content }: IAccordion) => {
           <AccordionPanel
             pb={6}
             textAlign="left"
-            fontSize={['1rem', '1.125rem']}
-            lineHeight="1.875rem"
+            fontSize={['.75rem', '1.125rem']}
+            lineHeight={['1rem', '1.875rem']}
             color="#6f6c90"
             w="95%"
             px="1.25rem"

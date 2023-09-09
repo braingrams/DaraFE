@@ -3,7 +3,7 @@ import React from 'react';
 import { IMainHeader } from '../Schemas';
 
 export const MainSubTitle = ({
-  size = '1.25rem',
+  size = ['0.75rem', '1.25rem'],
   text,
   align = 'center',
   color = 'brand.400',

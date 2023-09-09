@@ -3,7 +3,7 @@ import React from 'react';
 import { IMainHeader } from '../Schemas';
 
 export const MainHeader = ({
-  size = '3rem',
+  size = ['1.125rem', '3rem'],
   text,
   align = 'center',
   color = 'brand.300',

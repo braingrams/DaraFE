@@ -13,10 +13,11 @@ export const FooterMenuItems = ({
     <Link passHref href={url}>
       <Text
         fontWeight="500"
-        fontSize={['.8rem', '.875rem']}
+        fontSize={['.625rem', '.875rem']}
         mb="0"
         cursor="pointer"
         color="rgba(255, 255, 255, 0.90)"
+        opacity=".75"
       >
         {text}
       </Text>

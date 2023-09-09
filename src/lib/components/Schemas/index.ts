@@ -1,5 +1,6 @@
 export interface IMenuProps {
   link: { href: string; name: string };
+  onClick: any;
 }
 export interface IBtnProps {
   p?: any;
@@ -8,6 +9,7 @@ export interface IBtnProps {
   icon?: any;
   bg?: any;
   color?: any;
+  w?: any;
 }
 export interface ITextWithDot {
   dot?: boolean;
@@ -71,6 +73,9 @@ export interface IPrimaryInput {
   placeholder?: string;
   h?: any;
   count?: any;
+  onChange?: any;
+  value?: any;
+  type?: any;
 }
 
 export interface IFilterHeads {

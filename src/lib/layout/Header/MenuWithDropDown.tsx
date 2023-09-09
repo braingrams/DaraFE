@@ -18,12 +18,14 @@ interface IMenuProps {
   menus: any;
   menuIcon?: any;
   menuTitle?: any;
+  onClick?: any;
 }
 
 export const MenuWithDropdown = ({
   menus,
   menuTitle,
   menuIcon = <RxCaretDown />,
+  onClick,
 }: IMenuProps) => {
   const url = `/${menuTitle}`;
   const pathname = usePathname();
@@ -67,7 +69,7 @@ export const MenuWithDropdown = ({
             color={
               pathname.startsWith(`${url}/${x.name}`) ? 'brand.400' : 'black'
             }
-            // onClick={}
+            onClick={onClick}
             key={i}
           >
             {x.icon && <Icon as={x.icon} />}

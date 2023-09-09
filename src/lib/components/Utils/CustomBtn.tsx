@@ -9,19 +9,21 @@ export const CustomBtn = ({
   icon,
   bg,
   color,
+  w,
 }: IBtnProps) => {
   return (
     <Button
       bgColor={bg || 'brand.100'}
       color={color || 'white'}
       borderRadius="55px"
-      fontSize=".9rem"
+      fontSize={['.875rem', '.9rem']}
       fontWeight={600}
       fontFamily="Inter"
       p={p}
       onClick={onClick}
+      w={w}
     >
-      {text} {icon && <Icon as={icon} pl="1rem" />}
+      {text} {icon && <Icon as={icon} />}
     </Button>
   );
 };

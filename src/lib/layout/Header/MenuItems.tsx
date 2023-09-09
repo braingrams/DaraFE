@@ -6,7 +6,7 @@ import { IMenuProps } from '~/lib/components/Schemas';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-export const MenuItems = ({ link }: IMenuProps) => {
+export const MenuItems = ({ link, onClick }: IMenuProps) => {
   const url = `/${link.href}`;
   const pathname = usePathname();
   const isActive = pathname === url;
@@ -19,6 +19,7 @@ export const MenuItems = ({ link }: IMenuProps) => {
         fontSize="1rem"
         fontWeight={500}
         color={isActive ? 'brand.100' : 'brand.200'}
+        onClick={onClick}
       >
         {link.name}
       </Box>

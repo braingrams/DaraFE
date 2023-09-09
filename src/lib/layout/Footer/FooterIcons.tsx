@@ -6,7 +6,7 @@ export const FooterIcons = ({ icon, url }: { icon: any; url: string }) => {
   return (
     <Link passHref href={url}>
       <Icon
-        fontSize={['1rem', '1rem']}
+        fontSize={['1.5rem', '1rem']}
         cursor="pointer"
         color="white"
         as={icon}

@@ -16,18 +16,32 @@ import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <Box w="100%" py="3.5rem" bgColor="brand.100" mt="9.5rem">
-      <HStack align="flex-start" w="80%" mx="auto" justify="space-between">
-        <VStack align="flex-start" w="40%">
-          <Box>
-            <Image src="/assets/logob.png" alt="logo image" />
+    <Box
+      w="100%"
+      py={['2rem', '3.5rem']}
+      bgColor="brand.100"
+      mt={['5rem', '9.5rem']}
+    >
+      <HStack
+        align="flex-start"
+        w={['90%', '90%']}
+        mx="auto"
+        justify="space-between"
+        flexDir={['column', 'row']}
+      >
+        <VStack align="flex-start" w={['full', '40%']}>
+          <Box ml="-.5rem">
+            <Image
+              src="/assets/logob.png"
+              alt="logo image"
+              h={['2.5rem', '4.5rem']}
+            />
           </Box>
           <Text
-            fontSize="1rem"
-            lineHeight="1.5rem"
+            fontSize={['.62rem', '1rem']}
+            lineHeight={['.75rem', '1.5rem']}
             color="white"
-            w="80%"
-            pl="1rem"
+            w={['full', '80%']}
           >
             Dara is a social gig platform, connecting verified and trusted
             artisans and professional service providers with clients.
@@ -35,9 +49,9 @@ function Footer() {
         </VStack>
 
         <Grid
-          templateColumns={['1fr', 'repeat(3, 1fr)']}
+          templateColumns={['repeat(2, 1fr)', 'repeat(3, 1fr)']}
           gap="2rem"
-          w="60%"
+          w={['full', '60%']}
           justifyContent="flex-end"
           mt="1rem"
         >
@@ -54,7 +68,7 @@ function Footer() {
             <FooterMenuItems text="Terms & Conditions" url="/" />
           </VStack>
           <VStack spacing="0" gap=".75rem" align="flex-start">
-            <HStack spacing="1rem">
+            <HStack spacing={['1.25rem', '1rem']} mb={['.5rem', '0']}>
               <FooterIcons icon={FaFacebookF} url="/" />
               <FooterIcons icon={FaLinkedinIn} url="/" />
               <FooterIcons icon={AiFillInstagram} url="/" />
@@ -65,9 +79,15 @@ function Footer() {
           </VStack>
         </Grid>
       </HStack>
-      <Box w="80%" mx="auto" p="4rem 0 2rem">
+      <Box w={['90%', '90%']} mx="auto" p={['2rem 0 0', '4rem 0 2rem']}>
         <Divider color="white" />
-        <Text fontWeight={500} color="white" textAlign="center" mt="1.5rem">
+        <Text
+          fontWeight={500}
+          color="white"
+          textAlign="center"
+          mt={['.5rem', '1.5rem']}
+          fontSize={['.6rem', '1rem']}
+        >
           Copyright © 2023 Dara. All rights reserved
         </Text>
       </Box>

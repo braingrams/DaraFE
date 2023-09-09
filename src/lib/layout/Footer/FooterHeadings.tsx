@@ -4,10 +4,10 @@ import React from 'react';
 export const FooterHeadings = ({ text }: { text: string }) => {
   return (
     <Text
-      fontSize="1rem"
+      fontSize={['.875rem', '1rem']}
       fontWeight="700"
       color="white"
-      mb="0"
+      mb={['.5rem', '0']}
       textTransform="capitalize"
     >
       {text}

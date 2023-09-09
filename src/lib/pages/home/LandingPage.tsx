@@ -31,26 +31,31 @@ const LandingPage = () => {
           justifyContent="space-between"
           gap="3rem"
           py="3rem"
+          flexDirection={['column-reverse', 'row']}
         >
-          <VStack align="flex-start" w="45%" gap="1.5rem">
-            <HStack gap="2rem">
+          <VStack
+            align={['center', 'flex-start']}
+            w={['full', '45%']}
+            gap={['1rem', '1.5rem']}
+          >
+            <HStack gap={['1rem', '2rem']}>
               <TextWithDot text="Discover" />
               <TextWithDot text="Connect" dot />
               <TextWithDot text="Simplify" dot />
             </HStack>
             <MainHeader
               text="Welcome to Dara - Your Gateway to Reliable Services!"
-              align="left"
-              size="3.5rem"
+              align={['center', 'left']}
+              size={['1.25rem', '3.5rem']}
             />
             <MainSubTitle
               text="At Dara, we believe in the power of seamless connections. Our cutting-edge platform is meticulously designed to bridge the gap between discerning customers and skilled service providers. Whether you're in search of a reliable service provider or you're a service provider ready to showcase your expertise, our technology is here to make it happen."
-              align="left"
+              align={['center', 'left']}
             />
             <SubscriptionForm />
           </VStack>
-          <VStack pos="relative" align="flex-end" w="55%">
-            <Circle size="24rem">
+          <VStack pos="relative" align="flex-end" w={['full', '55%']}>
+            <Circle size={['13rem', '24rem']}>
               <Image
                 src="/assets/heroa.png"
                 alt="Smiling man"
@@ -58,7 +63,12 @@ const LandingPage = () => {
                 h="full"
               />
             </Circle>
-            <Circle size="17.5rem" pos="absolute" left="10%" top="38%">
+            <Circle
+              size={['10rem', '17.5rem']}
+              pos="absolute"
+              left={['0%', '10%']}
+              top="38%"
+            >
               <Image
                 src="/assets/heroc.png"
                 alt="Smiling man"
@@ -66,7 +76,7 @@ const LandingPage = () => {
                 h="full"
               />
             </Circle>
-            <Circle size="20rem">
+            <Circle size={['11.5rem', '20rem']}>
               <Image
                 src="/assets/herob.png"
                 alt="Smiling man"
@@ -77,55 +87,55 @@ const LandingPage = () => {
           </VStack>
         </Flex>
       </CustomContainer>
-      <Box bgColor="#EAF1FF" w="full" py="4rem">
-        <MainHeader text="Why Choose Dara?" />
+      <Box bgColor="#EAF1FF" w="full" py={['1.5rem', '4rem']}>
+        <MainHeader text="Why Choose Dara?" fw={600} />
         <Flex
           w="90%"
           mx="auto"
           justify="center"
           flexWrap="wrap"
-          gap="4rem"
+          gap={['2rem', '4rem']}
           mt="2.5rem"
         >
           <CustomCard
             bg="#F97316"
             icon={FaAward}
             title="Excellence"
-            w="30%"
+            w={['100%', '30%']}
             text="We're committed to curating a network of top-tier service providers who are masters of their trade."
           />
           <CustomCard
             bg="brand.100"
             icon={FaHandshake}
             title="Trust"
-            w="30%"
+            w={['100%', '30%']}
             text="Your peace of mind matters to us. We rigorously vet every artisan to ensure you're only connected with trustworthy professionals."
           />
           <CustomCard
             bg="#84CC16"
             icon={FaHandshake}
             title="Quality Control"
-            w="30%"
+            w={['100%', '30%']}
             text="Our commitment to quality control defines how our service providers serve clients—delivering excellence and meticulous attention to detail in every interaction"
           />
           <CustomCard
             bg="#A855F7"
             icon={FaAward}
             title="Loyalty"
-            w="30%"
+            w={['100%', '30%']}
             text="We're more than just a platform; we're your loyal companion in your quest for quality services. As a returning customer, unlock exclusive perks and benefits that make your experience even more rewarding"
           />
           <CustomCard
             bg="#EF4444"
             icon={FaAward}
-            w="30%"
+            w={['100%', '30%']}
             title="Customer Service"
             text="Our dedicated support team is here to assist you every step of the way. Your satisfaction is our priority"
           />
         </Flex>
       </Box>
       <CustomContainer>
-        <VStack my="8.5rem" gap="14rem">
+        <VStack my={['5rem', '8.5rem']} gap={['5rem', '14rem']}>
           <ContentDisplay
             img="/assets/placea.png"
             text="Discover Services Like Never Before"
@@ -143,15 +153,15 @@ const LandingPage = () => {
 
         <Box
           bgColor="brand.100"
-          border="20px solid #9CBDFF"
+          border={['8px solid #9cbdff', '20px solid #9CBDFF']}
           borderRadius="1.25rem"
-          py="4rem"
+          py={['2rem', '4rem']}
           pos="relative"
-          w="100%"
+          w={['97%', '100%']}
           mx="auto"
         >
           <VStack w="80%" mx="auto">
-            <VStack gap="1.5rem" mb="4rem">
+            <VStack gap={['1rem', '1.5rem']} mb={['2rem', '4rem']}>
               <MainHeader
                 text="Join us in revolutionizing the way you discover and provide services."
                 color="white"
@@ -160,23 +170,36 @@ const LandingPage = () => {
                 text="Ready to get started? Download our technology to witness firsthand transformation. Get the App and Embrace the Change!"
                 color="white"
               />
-              <HStack gap="1.5rem">
-                <Image src="/assets/google.png" alt="gplay" />
-                <Image src="/assets/appstore.png" alt="appstore" />
+              <HStack gap={['1rem', '1.5rem']}>
+                <Image
+                  src="/assets/google.png"
+                  alt="gplay"
+                  h={['2rem', 'full']}
+                />
+                <Image
+                  src="/assets/appstore.png"
+                  alt="appstore"
+                  h={['2rem', 'full']}
+                />
               </HStack>
             </VStack>
-            <SubscriptionForm color="white" tColor="brand.100" w="60%" />
+            <SubscriptionForm
+              color="white"
+              tColor="brand.100"
+              w={['full', '60%']}
+            />
           </VStack>
           <Image
             src="/assets/fav.png"
             alt="icon"
             pos="absolute"
-            left="-5%"
-            bottom="-15%"
+            left={['-4%', '-5%']}
+            bottom={['-4%', '-13%']}
+            h={['5.6rem', 'full']}
           />
         </Box>
 
-        <Box mt="12.5rem">
+        <Box mt={['5.4rem', '12.5rem']}>
           <ContentDisplay
             img="/assets/placec.png"
             text="Unlock the Power of “Finding service providers near you”"
@@ -184,11 +207,11 @@ const LandingPage = () => {
           />
         </Box>
 
-        <Box w="90%" mx="auto" mt="9.5rem">
-          <Box mx="auto" w="40%">
+        <Box w={['full', '90%']} mx="auto" mt={['5rem', '9.5rem']}>
+          <Box mx="auto" w={['full', '40%']}>
             <MainHeader text="Frequently asked questions about Dara" />
           </Box>
-          <VStack mt="3.5rem">
+          <VStack mt={['1.5rem', '3.5rem']}>
             <Accordion
               defaultIndex={[1]}
               // allowMultiple
@@ -200,8 +223,8 @@ const LandingPage = () => {
                 <CustomAccordion title={x.title} content={x.content} />
               ))}
             </Accordion>
-            <Flex justify="center" mt="3.5rem">
-              <CustomBtn p="2rem 7rem" text="Contact Us" />
+            <Flex justify="center" mt={['1.5rem', '3.5rem']}>
+              <CustomBtn p={['1rem 3rem', '2rem 7rem']} text="Contact Us" />
             </Flex>
           </VStack>
         </Box>

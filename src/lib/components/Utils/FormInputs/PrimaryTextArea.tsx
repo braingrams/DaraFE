@@ -1,6 +1,7 @@
 import {
   Flex,
   FormControl,
+  FormErrorMessage,
   FormLabel,
   Input,
   Textarea,
@@ -13,25 +14,43 @@ export const PrimaryTextArea = ({
   placeholder,
   h,
   count,
+  onChange,
+  value,
 }: IPrimaryInput) => {
   return (
-    <FormControl>
-      <FormLabel fontSize="1rem" fontWeight="600" color="#1F2937" mb=".56rem">
+    <FormControl
+    // isInvalid={!value}
+    >
+      <FormLabel
+        fontSize={['.75rem', '1rem']}
+        fontWeight="600"
+        color="#1F2937"
+        mb=".56rem"
+      >
         {label}
       </FormLabel>
       <Textarea
-        p="4rem"
         border="1px solid #E5E7EB"
         borderRadius=".5rem"
         boxShadow="0px 1px 2px 0px rgba(0, 0, 0, 0.05)"
-        fontSize="1.125rem"
+        fontSize={['.87rem', '1.125rem']}
         placeholder={placeholder}
         h={h}
         resize="none"
+        onChange={onChange}
       ></Textarea>
-      <Flex justify="flex-end" fontSize=".875rem" fontWeight="500" mt=".5rem">
+      <Flex
+        justify="flex-end"
+        fontSize={['.75rem', '.875rem']}
+        fontWeight="500"
+        mt=".5rem"
+        color="#9CA3AF"
+      >
         {count}
       </Flex>
+      {/* <FormErrorMessage fontSize=".7rem" color="red">
+        {!value && `${label} is required`}
+      </FormErrorMessage> */}
     </FormControl>
   );
 };
