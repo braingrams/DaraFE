@@ -8,19 +8,19 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { IPrimaryInput } from '../../Schemas';
+import { ValidationError } from '@formspree/react';
 
 export const PrimaryTextArea = ({
   label,
   placeholder,
   h,
   count,
+  error,
+  name,
   onChange,
-  value,
 }: IPrimaryInput) => {
   return (
-    <FormControl
-    // isInvalid={!value}
-    >
+    <FormControl isInvalid={error}>
       <FormLabel
         fontSize={['.75rem', '1rem']}
         fontWeight="600"
@@ -38,6 +38,7 @@ export const PrimaryTextArea = ({
         h={h}
         resize="none"
         onChange={onChange}
+        name={name}
       ></Textarea>
       <Flex
         justify="flex-end"
@@ -48,9 +49,7 @@ export const PrimaryTextArea = ({
       >
         {count}
       </Flex>
-      {/* <FormErrorMessage fontSize=".7rem" color="red">
-        {!value && `${label} is required`}
-      </FormErrorMessage> */}
+      <ValidationError prefix={label} field={name} errors={error} />
     </FormControl>
   );
 };

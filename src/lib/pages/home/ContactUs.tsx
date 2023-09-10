@@ -15,52 +15,15 @@ import { HiMail } from 'react-icons/hi';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-
-const sgMail = require('@sendgrid/mail');
-
-sgMail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY);
+import { useForm } from '@formspree/react';
+import { ThankYou } from './ThankYou';
 
 export const ContactUs = () => {
-  const [emailStatus, setEmailStatus] = useState({
-    status: false,
-    err: false,
-    msg: '',
-  });
-  const [field, setfield] = useState({
-    name: '',
-    email: '',
-    msg: '',
-  });
-  const submitForm = async () => {
-    const msg = {
-      to: field?.email,
-      from: 'braingrams40@gmail.com', // Use the email address or domain you verified above
-      subject: `New contact message from ${field?.name} on Dara`,
-      html: `
-      <p><strong>Name</strong>: ${field?.name}</p>
-      <p><strong>Message</strong>: ${field?.msg}</p>
-      `,
-    };
-    console.log(msg);
-    try {
-      await sgMail.send(msg);
-      setEmailStatus({
-        status: true,
-        err: false,
-        msg: 'Your response has been recieved and a customer agent will contact you shortly',
-      });
-    } catch (error: any) {
-      setEmailStatus({
-        status: true,
-        err: true,
-        msg: 'An Error Occured, Please try again',
-      });
-      console.error(error);
-      if (error?.response) {
-        console.error(error?.response?.body);
-      }
-    }
-  };
+  const [msg, setMsg] = useState('');
+  const [state, handleSubmit] = useForm('mzblglgj');
+  if (state.succeeded) {
+    return <ThankYou />;
+  }
   return (
     <Box>
       <CustomContainer>
@@ -133,16 +96,6 @@ export const ContactUs = () => {
             borderRadius={['1rem', '1.25rem']}
             border="1px solid #E5E7EB"
           >
-            {emailStatus.status && (
-              <Box
-                p="1rem"
-                bgColor={emailStatus.err ? 'red.50' : 'blue.50'}
-                fontSize=".8rem"
-                mb="1rem"
-              >
-                {emailStatus.msg}
-              </Box>
-            )}
             <Text
               display={['block', 'none']}
               fontSize=".75rem"
@@ -151,39 +104,40 @@ export const ContactUs = () => {
             >
               Fill the form below
             </Text>
-            <form>
+            <form onSubmit={handleSubmit}>
               <VStack gap="1.75rem" align="flex-start">
+                <input
+                  name="subject"
+                  type="hidden"
+                  value="New submission from {{ name }}"
+                />
                 <PrimaryInput
                   label="Name"
                   placeholder="Enter your full name"
-                  onChange={(e: any) =>
-                    setfield({ ...field, name: e.target.value })
-                  }
-                  value={field.name}
+                  name={'name'}
+                  error={state.errors}
                 />
                 <PrimaryInput
                   label="Email"
                   placeholder="Enter your email address"
-                  onChange={(e: any) =>
-                    setfield({ ...field, email: e.target.value })
-                  }
-                  value={field.email}
+                  name={'email'}
                   type={'email'}
+                  error={state.errors}
                 />
                 <PrimaryTextArea
                   label="Message"
                   placeholder="Type your message"
-                  h="21rem"
-                  count={`${field.msg.length}/1000`}
-                  onChange={(e: any) =>
-                    setfield({ ...field, msg: e.target.value })
-                  }
-                  value={field.msg}
+                  h={['10rem', '21rem']}
+                  count={`${msg.length}/1000`}
+                  onChange={(e: any) => setMsg(e.target.value)}
+                  name={'message'}
+                  error={state.errors}
                 />
                 <CustomBtn
                   text="Submit"
                   p="1.5rem 3rem"
-                  onClick={() => submitForm()}
+                  type="submit"
+                  disabled={state.submitting}
                 />
               </VStack>
             </form>

@@ -10,6 +10,8 @@ export const CustomBtn = ({
   bg,
   color,
   w,
+  type,
+  disabled
 }: IBtnProps) => {
   return (
     <Button
@@ -22,6 +24,8 @@ export const CustomBtn = ({
       p={p}
       onClick={onClick}
       w={w}
+      type={type}
+      isDisabled={disabled}
     >
       {text} {icon && <Icon as={icon} />}
     </Button>

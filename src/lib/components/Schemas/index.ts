@@ -10,6 +10,8 @@ export interface IBtnProps {
   bg?: any;
   color?: any;
   w?: any;
+  type?: any;
+  disabled?: any;
 }
 export interface ITextWithDot {
   dot?: boolean;
@@ -73,9 +75,10 @@ export interface IPrimaryInput {
   placeholder?: string;
   h?: any;
   count?: any;
-  onChange?: any;
-  value?: any;
+  error?: any;
+  name?: any;
   type?: any;
+  onChange?: any;
 }
 
 export interface IFilterHeads {

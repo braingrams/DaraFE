@@ -6,18 +6,17 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { IPrimaryInput } from '../../Schemas';
+import { ValidationError } from '@formspree/react';
 
 export const PrimaryInput = ({
   label,
   placeholder,
-  onChange,
-  value,
+  error,
+  name,
   type = 'text',
 }: IPrimaryInput) => {
   return (
-    <FormControl
-    // isInvalid={!value}
-    >
+    <FormControl isInvalid={error}>
       <FormLabel
         fontSize={['.75rem', '1rem']}
         fontWeight="600"
@@ -33,12 +32,10 @@ export const PrimaryInput = ({
         boxShadow="0px 1px 2px 0px rgba(0, 0, 0, 0.05)"
         fontSize={['.875rem', '1.125rem']}
         placeholder={placeholder}
-        onChange={onChange}
         type={type}
+        name={name}
       />
-      {/* <FormErrorMessage fontSize=".7rem" color="red">
-        {!value && `${label} is required`}
-      </FormErrorMessage> */}
+      <ValidationError prefix={label} field={name} errors={error} />
     </FormControl>
   );
 };
