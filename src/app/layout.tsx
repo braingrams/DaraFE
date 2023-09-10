@@ -47,6 +47,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
+      <link rel="icon" href="/assets/fav.png" sizes="32x32" />
       <body>
         <Suspense fallback={<Loading />}>
           <Providers>

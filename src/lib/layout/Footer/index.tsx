@@ -57,13 +57,16 @@ function Footer() {
         >
           <VStack spacing="0" gap="0.75rem" align="flex-start">
             <FooterHeadings text="Product" />
-            <FooterMenuItems text="Client" url="/" />
-            <FooterMenuItems text="Service Providers" url="/" />
-            <FooterMenuItems text="Contact Us" url="/" />
+            <FooterMenuItems text="Client" url="/services/as-a-client" />
+            <FooterMenuItems
+              text="Service Providers"
+              url="/services/as-a-service-provider"
+            />
+            <FooterMenuItems text="Contact Us" url="/contact-us" />
           </VStack>
           <VStack spacing="0" gap=".75rem" align="flex-start">
             <FooterHeadings text="Company" />
-            <FooterMenuItems text="About Us" url="/" />
+            <FooterMenuItems text="About Us" url="/about-us" />
             <FooterMenuItems text="Privacy Policy" url="/" />
             <FooterMenuItems text="Terms & Conditions" url="/" />
           </VStack>
@@ -74,8 +77,11 @@ function Footer() {
               <FooterIcons icon={AiFillInstagram} url="/" />
               <FooterIcons icon={FaXTwitter} url="/" />
             </HStack>
-            <FooterMenuItems text="support@dara.com" url="/" />
-            <FooterMenuItems text="+2348101234567" url="/" />
+            <FooterMenuItems
+              text="support@usedara.com"
+              url="mailto@support@usedara.com"
+            />
+            <FooterMenuItems text="+2348101234567" url="tel:+2348101234567" />
           </VStack>
         </Grid>
       </HStack>

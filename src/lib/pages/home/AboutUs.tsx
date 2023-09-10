@@ -10,6 +10,7 @@ import { FaAward, FaHandshake } from 'react-icons/fa';
 import { CustomCard } from '../../components/Utils/CustomCard';
 import { CustomBtn } from '../../components/Utils/CustomBtn';
 import { CustomContainer } from '~/lib/components/Utils/CustomContainer';
+import Link from 'next/link';
 
 export const AboutUs = () => {
   return (
@@ -110,7 +111,9 @@ export const AboutUs = () => {
             w={['full', '60%']}
             text="Let's bridge the gap between talent and demand, one excellent service at a time. Welcome to Dara, where excellence finds its true match."
           />
-          <CustomBtn p={['1.5rem 3rem', '2rem 7rem']} text="Contact Us" />
+          <Link href={'/contact-us'} passHref>
+            <CustomBtn p={['1rem 3rem', '2rem 7rem']} text="Contact Us" />
+          </Link>
         </VStack>
       </CustomContainer>
     </Box>

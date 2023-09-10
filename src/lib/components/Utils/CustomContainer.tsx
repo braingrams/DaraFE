@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 
 export const CustomContainer = ({ children }: { children: ReactNode }) => {
   return (
-    <Box w="90%" mx="auto" overflow="hidden">
+    <Box w="90%" mx="auto">
       {children}
     </Box>
   );

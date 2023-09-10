@@ -57,7 +57,7 @@ export const MenuWithDropdown = ({
           {menuTitle.replaceAll('-', ' ')}
         </Text>
       </MenuButton>
-      <MenuList borderRadius="8px" p="0" cursor="pointer">
+      <MenuList borderRadius="8px" p="0" cursor="pointer" bgColor="white">
         {menus.map((x: any, i: any) => (
           <MenuItem
             borderBottom="1px solid"

@@ -1,52 +1,47 @@
 [
     {
         "id": 1,
-        "title": "What makes a home 'eco-friendly'?",
-        "content": "TIMBA is a powerful and user-friendly software designed to streamline time management and project tracking for individuals, teams, and businesses of all sizes. It offers a range of features, including contract management, time tracking, payment monitoring, and more."
+        "title": "What is Dara technology, and how does it work?",
+        "content": "Dara technology is a cutting-edge platform designed to connect customers with skilled service providers seamlessly. It works by matching customer requests with the expertise and availability of service providers in real-time."
     },
     {
         "id": 2,
-        "title": "What are some common features of eco-friendly homes?",
-        "content": "Eco-friendly homes typically feature energy-efficient appliances, which use less energy than traditional appliances and can help to reduce energy bills. Features include: solar panel, insulation, efficient lighting, water-saving features, sustainable materials, e.t.c"
+        "title": "How do I sign up as a customer on Dara?",
+        "content": " Signing up as a customer on Dara is easy. Simply download our app or visit our website, create an account, and start searching for the services you need in your area."
     },
     {
         "id": 3,
-        "title": "Are eco-friendly homes more expensive than traditional homes?",
-        "content": "TIMBA&#39;s main features include centralized contract storage, real-time contract monitoring with start and end dates, milestones tracking, automated invoicing, payment tracking, and contract expiration alerts."
+        "title": "How can I become a service provider on Dara?",
+        "content": "To become a service provider on Dara, you'll need to complete a registration process, including providing details about your expertise, certifications, and availability. Once approved, you can start offering your services to customers."
     },
     {
         "id": 4,
-        "title": "How do eco-friendly homes benefit the environment?",
-        "content": "TIMBA is a web-based app that is easy to use. It has a user-friendly interface and a simple, straightforward workflow. TIMBA is suitable for non-tech-savvy users."
+        "title": " Is Dara available in my area?",
+        "content": " Dara is continually expanding its coverage. To check if Dara is available in your area, please visit our website or download our app and enter your location."
     },
     {
         "id": 5,
-        "title": "What is the process for building or renovating an eco-friendly home?",
-        "content": "By providing insights into workforce performance and project progress, TIMBA empowers users to optimize their time, monitor productivity, and make informed decisions for improved efficiency."
+        "title": "What types of services can I find on Dara?",
+        "content": "Dara offers a wide range of services, including home maintenance, beauty and wellness, tutoring, event planning, and much more. You can explore these categories on our platform."
     },
     {
         "id": 6,
-        "title": "What are some financing options for purchasing an eco-friendly home?",
-        "content": "Yes, TIMBA is designed to be scalable and versatile, making it suitable for both small businesses and large enterprises with varying time tracking and contract management needs."
+        "title": "How does Dara ensure the quality of service providers?",
+        "content": "Dara has a rigorous vetting process for service providers, including background checks and verification of qualifications. Customer reviews and ratings also help maintain service quality."
     },
     {
         "id": 7,
-        "title": "Can I still have a modern and stylish home while also being eco-friendly?",
-        "content": "TIMBA takes data security seriously and employs industry-standard security measures to protect user information and ensure data confidentiality."
+        "title": "How do payments work on Dara?",
+        "content": "Payments on Dara are secure and convenient. You can pay for services using various payment methods within the app or website. Payments are processed securely, and you'll receive an invoice for your records."
     },
     {
         "id": 8,
-        "title": "How do eco-friendly homes improve indoor air quality?",
-        "content": "Yes, TIMBA offers a 30-day free trial, allowing users to experience its features and benefits risk-free before making a commitment."
+        "title": "What if I have a problem with a service or service provider?",
+        "content": "If you encounter any issues with a service or service provider, please contact our customer support team through the app or website. We'll work to resolve any concerns promptly."
     },
     {
         "id": 9,
-        "title": "What are some common misconceptions about eco-friendly homes?",
-        "content": "Yes, TIMBA offers a 30-day free trial, allowing users to experience its features and benefits risk-free before making a commitment."
-    },
-    {
-        "id": 10,
-        "title": "How do I know if an eco-friendly home is right for me?",
-        "content": "Yes, TIMBA offers a 30-day free trial, allowing users to experience its features and benefits risk-free before making a commitment."
+        "title": "Is my personal information safe on Dara?",
+        "content": "Yes, Dara takes the privacy and security of your personal information seriously. We have robust security measures in place to protect your data. You can review our privacy policy for more details."
     }
 ]

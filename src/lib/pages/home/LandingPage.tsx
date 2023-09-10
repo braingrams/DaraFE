@@ -21,8 +21,11 @@ import { ContentDisplay } from '~/lib/components/Utils/ContentDisplay';
 import { CustomAccordion } from '~/lib/components/Utils/CustomAccordion';
 import { CustomBtn } from '~/lib/components/Utils/CustomBtn';
 import FaqData from '~/lib/components/data/faqData.json';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const LandingPage = () => {
+  const router = useRouter();
   return (
     <Box>
       <CustomContainer>
@@ -141,6 +144,7 @@ const LandingPage = () => {
             text="Discover Services Like Never Before"
             sub="Are you tired of sifting through endless options to find the right service provider? Look no further. Our platform simplifies the process with a user-friendly interface that effortlessly matches your needs with experienced artisans in your area. With a single click, you're connected to a world of possibilities."
             btn="Learn more"
+            onClick={() => router.push('/services/as-a-client')}
           />
           <ContentDisplay
             rtl
@@ -148,6 +152,7 @@ const LandingPage = () => {
             text="For Service Providers"
             sub="Join our community of skilled service providers and take your business to new heights. Showcase your expertise, gain exposure, and connect with customers seeking your services. With Dara, you're not just a service provider – you're a solution to someone's needs. Join a community that values excellence, trust, and loyalty."
             btn="Learn more"
+            onClick={() => router.push('/services/as-a-service-provider')}
           />
         </VStack>
 
@@ -157,7 +162,7 @@ const LandingPage = () => {
           borderRadius="1.25rem"
           py={['2rem', '4rem']}
           pos="relative"
-          w={['97%', '100%']}
+          w={['97%', '93%']}
           mx="auto"
         >
           <VStack w="80%" mx="auto">
@@ -183,11 +188,18 @@ const LandingPage = () => {
                 />
               </HStack>
             </VStack>
-            <SubscriptionForm
-              color="white"
-              tColor="brand.100"
-              w={['full', '60%']}
-            />
+            <Flex
+              justify="center"
+              w={['full', '30%']}
+              mx="auto"
+              pb={['3rem', '0']}
+            >
+              <SubscriptionForm
+                color="white"
+                tColor="brand.100"
+                w={['full', 'full']}
+              />
+            </Flex>
           </VStack>
           <Image
             src="/assets/fav.png"
@@ -195,7 +207,7 @@ const LandingPage = () => {
             pos="absolute"
             left={['-4%', '-5%']}
             bottom={['-4%', '-13%']}
-            h={['5.6rem', 'full']}
+            h={['5.6rem', '21rem']}
           />
         </Box>
 
@@ -208,12 +220,12 @@ const LandingPage = () => {
         </Box>
 
         <Box w={['full', '90%']} mx="auto" mt={['5rem', '9.5rem']}>
-          <Box mx="auto" w={['full', '40%']}>
+          <Box mx="auto" w={['full', '50%']}>
             <MainHeader text="Frequently asked questions about Dara" />
           </Box>
           <VStack mt={['1.5rem', '3.5rem']}>
             <Accordion
-              defaultIndex={[1]}
+              defaultIndex={[0]}
               // allowMultiple
               gap="0rem"
               display="flex"
@@ -224,7 +236,9 @@ const LandingPage = () => {
               ))}
             </Accordion>
             <Flex justify="center" mt={['1.5rem', '3.5rem']}>
-              <CustomBtn p={['1rem 3rem', '2rem 7rem']} text="Contact Us" />
+              <Link href={'/contact-us'} passHref>
+                <CustomBtn p={['1rem 3rem', '2rem 7rem']} text="Contact Us" />
+              </Link>
             </Flex>
           </VStack>
         </Box>

@@ -1,6 +1,8 @@
+'use client';
 import { Flex, Input, Box } from '@chakra-ui/react';
 import React from 'react';
 import { CustomBtn } from './CustomBtn';
+import { useRouter } from 'next/navigation';
 
 export const SubscriptionForm = ({
   color,
@@ -11,6 +13,7 @@ export const SubscriptionForm = ({
   tColor?: any;
   w?: any;
 }) => {
+  const router = useRouter();
   return (
     <Box w={w}>
       <Flex
@@ -23,6 +26,7 @@ export const SubscriptionForm = ({
         w={w}
         px="1rem"
         color={color || '#e5e7eb'}
+        display="none"
       >
         <Input
           border="0"
@@ -42,12 +46,17 @@ export const SubscriptionForm = ({
           />
         </Box>
       </Flex>
-      <Flex display={['flex', 'none']} justify="center" mt="1rem">
+      <Flex
+        display={['flex', 'flex']}
+        justify={['center', 'flex-start']}
+        // mt="1rem"
+      >
         <CustomBtn
-          text="Submit"
+          text="Sign up a service provider"
           p="1.5rem 4rem"
           bg={color || 'brand.100'}
           color={tColor}
+          onClick={() => router.push('/subscribe')}
         />
       </Flex>
     </Box>
