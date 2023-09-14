@@ -57,7 +57,7 @@ const LandingPage = () => {
             />
             <SubscriptionForm />
           </VStack>
-          <VStack pos="relative" align="flex-end" w={['full', '55%']}>
+          <VStack pos="relative" align="flex-end" w={['full', '55%']} gap={['0', '2rem']}>
             <Circle size={['13rem', '24rem']}>
               <Image
                 src="/assets/heroa.png"
@@ -69,7 +69,7 @@ const LandingPage = () => {
             <Circle
               size={['10rem', '17.5rem']}
               pos="absolute"
-              left={['0%', '10%']}
+              left={['0%', '15%']}
               top="38%"
             >
               <Image

@@ -52,7 +52,7 @@ export const SubscriptionForm = ({
         // mt="1rem"
       >
         <CustomBtn
-          text="Sign up a service provider"
+          text="Sign up as a service provider"
           p="1.5rem 4rem"
           bg={color || 'brand.100'}
           color={tColor}

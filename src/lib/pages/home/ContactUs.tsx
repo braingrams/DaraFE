@@ -78,7 +78,7 @@ export const ContactUs = () => {
               <ContactView
                 icon={HiMail}
                 title="Email"
-                text="support@dara.com"
+                text="support@usedara.com"
               />
               <ContactView icon={FaLinkedinIn} title="LinkedIn" text="Dara" />
               <ContactView icon={FaXTwitter} title="X (Twitter)" text="Dara" />

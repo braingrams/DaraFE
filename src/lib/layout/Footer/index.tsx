@@ -72,16 +72,16 @@ function Footer() {
           </VStack>
           <VStack spacing="0" gap=".75rem" align="flex-start">
             <HStack spacing={['1.25rem', '1rem']} mb={['.5rem', '0']}>
-              <FooterIcons icon={FaFacebookF} url="/" />
-              <FooterIcons icon={FaLinkedinIn} url="/" />
-              <FooterIcons icon={AiFillInstagram} url="/" />
-              <FooterIcons icon={FaXTwitter} url="/" />
+              <FooterIcons icon={FaFacebookF} url="https://www.facebook.com/profile.php?id=61551052834124&mibextid=LQQJ4d" />
+              <FooterIcons icon={FaLinkedinIn} url="https://www.linkedin.com/company/dara-connect" />
+              <FooterIcons icon={AiFillInstagram} url="https://instagram.com/daraapphq?igshid=NGVhN2U2NjQ0Yg==" />
+              <FooterIcons icon={FaXTwitter} url="https://twitter.com/daraAppHQ" />
             </HStack>
             <FooterMenuItems
               text="support@usedara.com"
               url="mailto@support@usedara.com"
             />
-            <FooterMenuItems text="+2348101234567" url="tel:+2348101234567" />
+            <FooterMenuItems text="+2347086691850" url="tel:+2347086691850" />
           </VStack>
         </Grid>
       </HStack>
