@@ -85,25 +85,25 @@ export const ContactUs = () => {
               <ContactView
                 icon={FaLinkedinIn}
                 title="LinkedIn"
-                text="Dara Connect"
+                text="DaraConnect"
                 url="https://www.linkedin.com/company/dara-connect"
               />
               <ContactView
                 icon={FaXTwitter}
                 title="X (Twitter)"
-                text="Dara App HQ"
+                text="DaraAppHQ"
                 url="https://twitter.com/daraAppHQ"
               />
               <ContactView
                 icon={FaFacebookF}
                 title="Facebook"
-                text="Dara"
+                text="DaraConnect"
                 url="https://www.facebook.com/profile.php?id=61551052834124&mibextid=LQQJ4d"
               />
               <ContactView
                 icon={AiFillInstagram}
                 title="Instagram"
-                text="Dara App HQ"
+                text="DaraAppHQ"
                 url="https://instagram.com/daraapphq?igshid=NGVhN2U2NjQ0Yg=="
               />
             </VStack>

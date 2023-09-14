@@ -62,6 +62,7 @@ export const MenuWithDropdown = ({
           <MenuItem
             borderBottom="1px solid"
             borderColor="gray.300"
+            bgColor="white"
             as="div"
             display="flex"
             gap=".5rem"
