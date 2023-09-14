@@ -68,6 +68,7 @@ export interface ICustomContact {
   text: string;
   title: string;
   icon: any;
+  url?: any;
 }
 
 export interface IPrimaryInput {

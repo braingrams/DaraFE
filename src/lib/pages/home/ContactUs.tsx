@@ -73,20 +73,38 @@ export const ContactUs = () => {
               <ContactView
                 icon={BsFillTelephoneFill}
                 title="Telephone"
-                text="+234 8101234567"
+                text="+2347086691850"
+                url="tel:+2347086691850"
               />
               <ContactView
                 icon={HiMail}
                 title="Email"
                 text="support@usedara.com"
+                url="mailto:support@usedara.com"
               />
-              <ContactView icon={FaLinkedinIn} title="LinkedIn" text="Dara" />
-              <ContactView icon={FaXTwitter} title="X (Twitter)" text="Dara" />
-              <ContactView icon={FaFacebookF} title="Facebook" text="Dara" />
+              <ContactView
+                icon={FaLinkedinIn}
+                title="LinkedIn"
+                text="Dara Connect"
+                url="https://www.linkedin.com/company/dara-connect"
+              />
+              <ContactView
+                icon={FaXTwitter}
+                title="X (Twitter)"
+                text="Dara App HQ"
+                url="https://twitter.com/daraAppHQ"
+              />
+              <ContactView
+                icon={FaFacebookF}
+                title="Facebook"
+                text="Dara"
+                url="https://www.facebook.com/profile.php?id=61551052834124&mibextid=LQQJ4d"
+              />
               <ContactView
                 icon={AiFillInstagram}
                 title="Instagram"
-                text="Dara"
+                text="Dara App HQ"
+                url="https://instagram.com/daraapphq?igshid=NGVhN2U2NjQ0Yg=="
               />
             </VStack>
           </Box>
