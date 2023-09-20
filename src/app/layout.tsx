@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
+import Script from 'next/script';
 
 import Providers from '~/app/providers';
 import Layout from '~/lib/layout';
@@ -47,6 +48,17 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-TY29F5BVQD"
+      />
+
+      <Script>
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TY29F5BVQD');`}
+      </Script>
       <link rel="icon" href="/assets/fav.png" sizes="32x32" />
       <body>
         <Suspense fallback={<Loading />}>

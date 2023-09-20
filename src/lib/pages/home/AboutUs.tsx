@@ -7,6 +7,8 @@ import { MainSubTitle } from '../../components/Utils/MainSubTitle';
 import { TextWithDot } from '../../components/Utils/TextWithDot';
 import { ContentDisplay } from '../../components/Utils/ContentDisplay';
 import { FaAward, FaHandshake } from 'react-icons/fa';
+import { RiCustomerService2Line } from 'react-icons/ri';
+import { MdLoyalty, MdOutlineControlPointDuplicate } from 'react-icons/md';
 import { CustomCard } from '../../components/Utils/CustomCard';
 import { CustomBtn } from '../../components/Utils/CustomBtn';
 import { CustomContainer } from '~/lib/components/Utils/CustomContainer';
@@ -76,7 +78,7 @@ export const AboutUs = () => {
           />
           <CustomCard
             bg="#84CC16"
-            icon={FaHandshake}
+            icon={MdOutlineControlPointDuplicate}
             title="Quality Control"
             w={['full', '45%']}
             dir
@@ -84,7 +86,7 @@ export const AboutUs = () => {
           />
           <CustomCard
             bg="#A855F7"
-            icon={FaAward}
+            icon={MdLoyalty}
             title="Loyalty"
             w={['full', '45%']}
             dir
@@ -92,7 +94,7 @@ export const AboutUs = () => {
           />
           <CustomCard
             bg="#EF4444"
-            icon={FaAward}
+            icon={RiCustomerService2Line}
             w={['full', '45%']}
             dir
             title="Customer Service"

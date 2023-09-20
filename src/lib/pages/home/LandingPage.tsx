@@ -17,6 +17,8 @@ import { MainSubTitle } from '~/lib/components/Utils/MainSubTitle';
 import { SubscriptionForm } from '~/lib/components/Utils/SubscriptionForm';
 import { TextWithDot } from '~/lib/components/Utils/TextWithDot';
 import { FaAward, FaHandshake } from 'react-icons/fa';
+import { RiCustomerService2Line } from 'react-icons/ri';
+import { MdLoyalty, MdOutlineControlPointDuplicate } from 'react-icons/md';
 import { ContentDisplay } from '~/lib/components/Utils/ContentDisplay';
 import { CustomAccordion } from '~/lib/components/Utils/CustomAccordion';
 import { CustomBtn } from '~/lib/components/Utils/CustomBtn';
@@ -127,21 +129,21 @@ const LandingPage = () => {
           />
           <CustomCard
             bg="#84CC16"
-            icon={FaHandshake}
+            icon={MdOutlineControlPointDuplicate}
             title="Quality Control"
             w={['100%', '30%']}
             text="Our commitment to quality control defines how our service providers serve clients—delivering excellence and meticulous attention to detail in every interaction"
           />
           <CustomCard
             bg="#A855F7"
-            icon={FaAward}
+            icon={MdLoyalty}
             title="Loyalty"
             w={['100%', '30%']}
             text="We're more than just a platform; we're your loyal companion in your quest for quality services. As a returning customer, unlock exclusive perks and benefits that make your experience even more rewarding"
           />
           <CustomCard
             bg="#EF4444"
-            icon={FaAward}
+            icon={RiCustomerService2Line}
             w={['100%', '30%']}
             title="Customer Service"
             text="Our dedicated support team is here to assist you every step of the way. Your satisfaction is our priority"
@@ -243,7 +245,11 @@ const LandingPage = () => {
               flexDirection="column"
             >
               {FaqData.map((x) => (
-                <CustomAccordion title={x.title} content={x.content} />
+                <CustomAccordion
+                  key={x.id}
+                  title={x.title}
+                  content={x.content}
+                />
               ))}
             </Accordion>
             <Flex justify="center" mt={['1.5rem', '3.5rem']}>
