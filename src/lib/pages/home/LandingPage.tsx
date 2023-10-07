@@ -110,7 +110,7 @@ const LandingPage = () => {
           mx="auto"
           justify="center"
           flexWrap="wrap"
-          gap={['2rem', '4rem']}
+          gap={['2rem', '3rem']}
           mt="2.5rem"
         >
           <CustomCard
