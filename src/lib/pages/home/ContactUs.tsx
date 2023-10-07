@@ -10,7 +10,7 @@ import { PrimaryTextArea } from '~/lib/components/Utils/FormInputs/PrimaryTextAr
 import { MainHeader } from '~/lib/components/Utils/MainHeader';
 import { MainSubTitle } from '~/lib/components/Utils/MainSubTitle';
 import { TextWithDot } from '~/lib/components/Utils/TextWithDot';
-import { BsFillTelephoneFill } from 'react-icons/bs';
+import { BsFillTelephoneFill, BsWhatsapp } from 'react-icons/bs';
 import { HiMail } from 'react-icons/hi';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
@@ -71,10 +71,10 @@ export const ContactUs = () => {
                 size={['.75rem', '1.125rem']}
               />
               <ContactView
-                icon={BsFillTelephoneFill}
-                title="Telephone"
-                text="+2347086691850"
-                url="tel:+2347086691850"
+                icon={BsWhatsapp}
+                title="Whatsapp"
+                text="+2347060500222"
+                url="https://wa.me/message/MX5JENZMK2BBI1"
               />
               <ContactView
                 icon={HiMail}
@@ -85,25 +85,25 @@ export const ContactUs = () => {
               <ContactView
                 icon={FaLinkedinIn}
                 title="LinkedIn"
-                text="DaraConnect"
+                text="Usedara"
                 url="https://www.linkedin.com/company/dara-connect"
               />
               <ContactView
                 icon={FaXTwitter}
                 title="X (Twitter)"
-                text="DaraAppHQ"
+                text="Usedara"
                 url="https://twitter.com/daraAppHQ"
               />
               <ContactView
                 icon={FaFacebookF}
                 title="Facebook"
-                text="DaraConnect"
+                text="Usedara"
                 url="https://www.facebook.com/profile.php?id=61551052834124&mibextid=LQQJ4d"
               />
               <ContactView
                 icon={AiFillInstagram}
                 title="Instagram"
-                text="DaraAppHQ"
+                text="Usedara"
                 url="https://instagram.com/daraapphq?igshid=NGVhN2U2NjQ0Yg=="
               />
             </VStack>

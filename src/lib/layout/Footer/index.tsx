@@ -93,7 +93,7 @@ function Footer() {
               text="support@usedara.com"
               url="mailto:support@usedara.com"
             />
-            <FooterMenuItems text="+2347086691850" url="tel:+2347086691850" />
+            <FooterMenuItems text="+2347060500222" url="https://wa.me/message/MX5JENZMK2BBI1" />
           </VStack>
         </Grid>
       </HStack>
