@@ -38,7 +38,7 @@ export const CustomAccordion = ({ title, content }: IAccordion) => {
                 fontSize={['.875remrem', '1.25rem']}
                 lineHeight={['1.25rem', '1.75rem']}
                 color="#073367"
-                noOfLines={isExpanded ? 5 : 1}
+                // noOfLines={isExpanded ? 5 : 4}
                 fontWeight="500"
                 maxW="100%"
               >
