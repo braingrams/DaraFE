@@ -92,19 +92,19 @@ export const ContactUs = () => {
                 icon={FaXTwitter}
                 title="X (Twitter)"
                 text="Usedara"
-                url="https://twitter.com/daraAppHQ"
+                url="https://twitter.com/usedaraHQ"
               />
               <ContactView
                 icon={FaFacebookF}
                 title="Facebook"
                 text="Usedara"
-                url="https://www.facebook.com/profile.php?id=61551052834124&mibextid=LQQJ4d"
+                url="https://www.facebook.com/profile.php?id=61553562602619&is_tour_completed=true"
               />
               <ContactView
                 icon={AiFillInstagram}
                 title="Instagram"
                 text="Usedara"
-                url="https://instagram.com/daraapphq?igshid=NGVhN2U2NjQ0Yg=="
+                url="https://www.instagram.com/usedarahq/ "
               />
             </VStack>
           </Box>

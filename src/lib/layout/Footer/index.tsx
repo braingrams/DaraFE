@@ -74,7 +74,7 @@ function Footer() {
             <HStack spacing={['1.25rem', '1rem']} mb={['.5rem', '0']}>
               <FooterIcons
                 icon={FaFacebookF}
-                url="https://www.facebook.com/profile.php?id=61551052834124&mibextid=LQQJ4d"
+                url="https://www.facebook.com/profile.php?id=61553562602619&is_tour_completed=true"
               />
               <FooterIcons
                 icon={FaLinkedinIn}
@@ -82,11 +82,11 @@ function Footer() {
               />
               <FooterIcons
                 icon={AiFillInstagram}
-                url="https://instagram.com/daraapphq?igshid=NGVhN2U2NjQ0Yg=="
+                url="https://www.instagram.com/usedarahq/ "
               />
               <FooterIcons
                 icon={FaXTwitter}
-                url="https://twitter.com/daraAppHQ"
+                url="https://twitter.com/usedaraHQ"
               />
             </HStack>
             <FooterMenuItems
